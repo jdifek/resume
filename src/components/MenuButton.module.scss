@@ -1,0 +1,31 @@
+@import '../styles/colors.scss';
+
+.menuButton {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	gap: 5px;
+	height: 51px;
+	justify-content: flex-end;
+	padding: 0 16px;
+	position: relative;
+	width: 93.75px;
+	text-decoration: none;
+	color: $text-gray;
+}
+
+.menu-button .textWrapper {
+	font-family: 'Quicksand-Bold', Helvetica;
+	font-size: 9px;
+	font-weight: 700;
+	letter-spacing: 0;
+	line-height: Truepx;
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	width: fit-content;
+}
+
+.menuButton .active {
+	color: $text-black;
+}
