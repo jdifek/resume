@@ -1,15 +1,23 @@
 import Image from 'next/image';
 import styles from './Icon.module.scss';
-import classnames from 'classnames';
 import { Fragment } from 'react';
+import classNames from 'classnames';
 
-export const Icon = ({ icon, iconOff, active }) => {
+export const Icon = ({ icon, iconOff, active, className }) => {
 	return (
 		<Fragment>
 			{active ? (
-				<Image className={styles.icon} src={icon} />
+				<Image
+					className={classNames(styles.icon, className)}
+					src={icon}
+					alt=''
+				/>
 			) : (
-				<Image className={styles.icon} src={iconOff} />
+				<Image
+					className={classNames(styles.icon, className)}
+					src={iconOff}
+					alt=''
+				/>
 			)}
 		</Fragment>
 	);
